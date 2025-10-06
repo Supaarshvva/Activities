@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        
+        }
+        .container{
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            aspect-ratio: 1 / 1;
+            grid-template-columns: repeat(3 , 1fr);
+            grid-template-rows: repeat(3 , 1fr);
+             gap: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+  .container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .container img:hover {
+            border: 2px solid black;
+            box-shadow: 2px 2px 10px gray;
+        }
+        @media (max-width: 900px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5PHjdZ4WsSRIm56h-o_Vw5QaFPHtvyo04hoQFtmdUoEamrgfszd8JfHnq39vTTE3qIKf8j9C9MTUAKfpT4TdoqDls-6BnSwzT2s9AiHg" alt="German Shephered">
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9Uq2-7AmMa38LoLT69NvpZOlrp3IDVaso09tT653Lm5LojwCmppqvJq-6WBc8mAGvWoE5FCoi2aROb6uy8okDf66ZIDWh4fjcI1wnOg" alt="Bulldog">
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWTMKWOI02K1eyzfFPVHno1lfEDeV4-a1ZqgZhMHWgqSDMnMgBvRclRcqQtyTJ6V82hhaCP4ZWsD4El5v8neJiS-y52uFAFlDSBR79gw" alt="Golden Reitriver">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcksoqCRmZlh1Upv8mkaeKqe88yjH7-byeAwrlEdwPLZlnpT9_vgJyr82xpufQ_34n5wCnl73pXmNsAsZswzVQY2iyKTIRuFSInTUnmFk" alt="Siberian Husky">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy3UOluCg33lDxy0d0NgcMZYuYnvRLkudhoefGKy6ApkmlYTEgPQosJZKe4jUupFAT4tpESCr7J_gDa4VQZVUxPwXKyFqoud2a7xJ-RQ" alt="">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl5maJLcj5TIAXifEyrwsZW7oByHknxBF6_9n933DDjctO7DVSI9n0NudM07WVJRC01rp4m7jP0AyZj_ehd-p1aNgAZni_DuYPejfIDA" alt="">
+<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzl0jTQb9SnWMsaTkVp63C3F98mKTVKYwkRESQseBS2wLAJ6UsnjdxMgZAp0fjWlZUWBCBPuIrMKHcsfE2AA62pNmwwffCEPz9VermPA" alt="">
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9ElSOq9zUnDSAZuGo8CB8pG2b4nq1QJuVN5sTugoAaYNzkKETUyNwOoIhiQ4bzahSKWevIcGpCfBOre2YXfGgrx44WBTz14LMUjfzKg" alt="">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQayr84MVfIkoCB4c1Skh64YkzvS5G9yQtoRLrQEUkzj2K1UGIQjfLgw0zpDytVkw9y5pyIs3fZR2VyAic-cOId_QQvT3LjY5s0oImJHg" alt="">
+    </div>
+</body>
+</html>
